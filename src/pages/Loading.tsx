@@ -1,6 +1,11 @@
 import React from "react";
+<<<<<<< HEAD
 import KilosGymImg from "../assets/Icon/image-5.png";
 import KILOSWhiteLogo1 from "../assets/Icon/KILOS-white-logo-1.png";
+=======
+import KilosGymImg from "../assets/images/image-5.png";
+import KILOSWhiteLogo1 from "../assets/images/KILOS-white-logo-1.png";
+>>>>>>> 3b4f0450ecf1bd65bea1da84344f89734a1eaeca
 
 export const LoadingPage: React.FC = () => {
   return (

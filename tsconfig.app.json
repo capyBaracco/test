@@ -4,8 +4,14 @@
     "target": "es2023",
     "lib": ["ES2023", "DOM"],
     "module": "esnext",
+<<<<<<< HEAD
     "types": ["vite/client", "./types.d.ts"],
     "skipLibCheck": true,
+=======
+    "types": ["vite/client"],
+    "skipLibCheck": true,
+    
+>>>>>>> 3b4f0450ecf1bd65bea1da84344f89734a1eaeca
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -16,10 +22,19 @@
     "jsx": "react-jsx",
 
     /* Linting */
+<<<<<<< HEAD
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src", "RealFrontendOnly/Logs", "src/pages/ManageProfile", "src/pages/LogsModule/LogsFilterSection.tsx", "src/pages/LogsModule/LogsIcons.tsx", "src/pages/LogsModule/LogsListSection.tsx", "src/pages/LogsModule/LogsMain.tsx", "src/pages/LogsModule/LogsStatsSection.tsx"]
+=======
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"]
+>>>>>>> 3b4f0450ecf1bd65bea1da84344f89734a1eaeca
 }

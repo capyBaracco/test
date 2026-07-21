@@ -3,8 +3,13 @@ import type { FormEvent } from "react";
 import { Eye, EyeOff } from "lucide-react"; 
 import { useNavigate } from "react-router-dom";
 import { login } from "../services/authService";
+<<<<<<< HEAD
 import KilosGymImg from "../assets/Icon/image-5.png";
 import KILOSWhiteLogo1 from "../assets/Icon/KILOS-white-logo-1.png";
+=======
+import KilosGymImg from "../assets/images/image-5.png";
+import KILOSWhiteLogo1 from "../assets/images/KILOS-white-logo-1.png";
+>>>>>>> 3b4f0450ecf1bd65bea1da84344f89734a1eaeca
 
 const formFields = [
   { id: "username", label: "Username", type: "text", autoComplete: "username" },
@@ -26,7 +31,11 @@ export const LoginPage: React.FC = () => {
 
     try {
       await login(formValues.username, formValues.password);
+<<<<<<< HEAD
       navigate("/audit-logs");
+=======
+      navigate("/dashboard");
+>>>>>>> 3b4f0450ecf1bd65bea1da84344f89734a1eaeca
     } catch (err: any) {
       setError(err.message);
     } finally {
@@ -89,6 +98,21 @@ export const LoginPage: React.FC = () => {
             </div>
           ))}
 
+<<<<<<< HEAD
+=======
+          <div className="text-center">
+  
+           <a href="/forgot-password"
+            className="font-poppins text-[#fdffe0]/70 hover:text-[#fdffe0] text-sm underline transition-all"
+            >
+            Forgot Password?
+          </a>
+          <p className="font-poppins text-[#fdffe0]/50 text-xs mt-1">
+            For admin accounts only
+          </p>
+          </div>
+
+>>>>>>> 3b4f0450ecf1bd65bea1da84344f89734a1eaeca
           <button
             type="submit"
             disabled={loading}
